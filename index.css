@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #000;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 20px;
+    align-items: start;
+}
+.icon-logo{
+    height: 50px;
+    width: 50px;
+}
+.before-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    left: 1.7dvw;
+    top: 3.7dvh;
+    z-index: -1;
+}
+div{
+    padding: 15px;
+}
+#nav-lat{
+    width: 20dvw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#content{
+    width: 60dvw;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#tags{
+    width: 20dvw;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    padding: 3px 10px;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+    transition: background 300ms ease;
+}
+.nav-items:hover{
+    background-color: #ffffff40;
+    cursor: pointer;
+}
+#item-post{
+    background-color: #fff;
+    color: #555;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+.bi{
+    font-size: 1.3rem;
+}
+
+.content-header{
+    width: 100%;
+    height: fit-content;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-items{
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 100px;
+}
+
+/*  Estilo del formulario */
+
+#post{
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+}
+#post:focus{
+    outline: none;
+}
+
+.user-pic{
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: 800;
+    background-color: rgb(155, 22, 84);
+    text-align: center;
+}
+
+.form-hr{
+    width: 90%;
+    position: relative;
+    left: 4.3dvw;
+}
+
+#form-btn{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#form-btn > input{
+    color: #333;
+    background-color: #fff;
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 20px;
+    font-weight: 900;
+    border: none;
+}
+#form-btn > input:hover{
+    cursor: pointer;
+}
+
+/* contenedor de publicaciones */
+
+#container-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.post-user{
+    width: 100%;
+    border: 1px solid #ffffff50;
+    padding: 9px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 0;
+}
+.post-content{
+    width: 100%;
+    color: #d4d4d4;
+    font-weight: 500;
+}
+
+.pic-content{
+    width:30px;
+    height: 100%;
+    display: flex;
+    align-content: start;
+    justify-content: center;
+}
