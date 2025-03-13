@@ -47,6 +47,7 @@ div{
 
 #tags{
     width: 20dvw;
+    display: none;
 }
 
 .nav-items{

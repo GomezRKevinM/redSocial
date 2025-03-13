@@ -61,6 +61,8 @@ const userLogin = {
     password: "none"
 }
 
+let isLogin = false;
+
 DB.push(usuario)
 
 function login(){
@@ -73,6 +75,7 @@ function login(){
             userLogin.nombre = item.nombre;
             userLogin.password = item.password;
             alert(`Bienvenid@ ${userLogin.nombre}`)
+            isLogin=true;
             savePic()
         }else{
             alert("Usuario no encontrado, valide los datos ingresados")
@@ -85,6 +88,11 @@ function savePic(){
 }
 
 function createPost(name,username){
+    if(isLogin!=true){
+        alert("Debe iniciar sesión primero para poder hacer un post")
+        inputPost.value=""
+        return
+    }
     const section = document.createElement('section');
     section.classList.add("post-user");
 
