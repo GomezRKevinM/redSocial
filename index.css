@@ -102,6 +102,24 @@ div{
     border: none;
     background-color: transparent;
     font-size: 1.3rem;
+    width: 80%;
+    resize: none;
+    height: fit-content;
+    form-sizing: content;
+}
+#btn-search:hover input{
+    display: inline;
+    outline: none;
+}
+#btn-search:hover h2 {
+    display: none;
+}
+#search{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    display: none;
+    width: 80%;
 }
 #post:focus{
     outline: none;

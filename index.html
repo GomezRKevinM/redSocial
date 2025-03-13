@@ -13,7 +13,7 @@
             <img class="icon-logo" src="./assets/svg/icon-x.svg" alt="logo">
             <span class="before-icon"></span>
             <button class="nav-items"><i class="bi bi-house-door-fill"></i><h2>Home</h2></button>
-            <button class="nav-items"><i class="bi bi-search"></i><h2>Search</h2></button>
+            <button class="nav-items" id="btn-search"><i class="bi bi-search"></i><h2>Search</h2><input type="text" name="search" id="search" placeholder="Search..."></button>
             <button class="nav-items" id="item-post">Post</button>
             <button class="nav-items" id="login"><i class="bi bi-person-fill"></i><h2>Login</h2></button>
         </div>
@@ -25,11 +25,11 @@
             <div class="form">
                 <div class="in">
                     <span class="user-pic" id="form-userPic">A</span>
-                    <input type="text" name="post" id="post" placeholder="Qué estas sintiendo?">
+                    <textarea type="text" name="post" id="post" placeholder="Qué estas sintiendo?"></textarea>
                 </div>
                 <hr class="form-hr">
                 <div id="form-btn">
-                    <input type="button" value="Publicar">
+                    <input type="button" value="Publicar" id="post-btn">
                 </div>
             </div>
             <div id="container-posts">
@@ -38,7 +38,7 @@
                         <span class="user-pic">K</span>
                     </div>
                     <div class="content-post">
-                        <p class="user-post-info"><span class="username-info">Kevin</span><span class="user-post-info">KevinGR . MAR 12</span></p>
+                        <p class="user-post-info"><span class="username-info">Kevin</span> <span class="user-post-info">KevinGR . MAR 12</span></p>
                         <p class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem debitis reprehenderit, provident excepturi distinctio delectus repudiandae, veritatis omnis, repellat numquam quam quas laboriosam fugiat nesciunt dolor nihil sit dolores necessitatibus!</p>
                     </div>
                 </section>
@@ -47,7 +47,17 @@
                         <span class="user-pic">C</span>
                     </div>
                     <div class="content-post">
-                        <p class="user-post-info"><span class="username-info">Carlos</span><span class="post-info">Cguti75 . MAR 12</span></p>
+                        <p class="user-post-info"><span class="username-info">Mauricio</span> <span class="post-info">Mau18 . MAR 12</span></p>
+                        <p class="post-content">Cada línea de código que escribes hoy es un paso más hacia tu futuro como desarrollador. No te detengas. 🚀💻 #Programación #Motivación</p>
+                    </div>
+                </section>
+                <section class="post-user">
+                    <div class="pic-content">
+                        <span class="user-pic">V</span>
+                    </div>
+                    <div class="content-post">
+                        <p class="user-post-info"><span class="username-info">Carlos</span> <span class="post-info">VoltG45 . MAR 13</span></p>
+                        <p class="post-content">La tecnología avanza a la velocidad de la luz, pero la documentación sigue en la Edad de Piedra. 📜💻 #DevLife #Coding/p>
                     </div>
                 </section>
             </div>
