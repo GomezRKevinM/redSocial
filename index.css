@@ -127,6 +127,8 @@ div{
 }
 
 .user-pic{
+    width: fit-content;
+    height: fit-content;
     padding: 5px 10px;
     border-radius: 50%;
     font-weight: 800;
@@ -138,6 +140,16 @@ div{
     width: 90%;
     position: relative;
     left: 4.3dvw;
+}
+.in{
+    display: flex;
+    align-self: self-start;
+    width: 100%;
+    height: fit-content;
+}
+.in > .user-pic{
+    position: relative;
+    top: 20px;
 }
 
 #form-btn{
@@ -189,6 +201,6 @@ div{
     width:30px;
     height: 100%;
     display: flex;
-    align-content: start;
+    align-self: flex-start;
     justify-content: center;
 }
